@@ -1,0 +1,109 @@
+.note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #edf2f7;
+}
+
+.note-form-container {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #edf2f7;
+}
+
+.note-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+.note-form h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #2b6cb0;
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 50px;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  border-color: #3182ce;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.note-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2b6cb0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note-form button:hover {
+  background-color: #224e85;
+}
+
+/* 🔄 Responsive Tweaks */
+@media (max-width: 768px) {
+  .note-form-container {
+    padding: 24px 16px;
+  }
+
+  .note-form {
+    padding: 24px;
+  }
+
+  .note-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .note-form input,
+  .note-form textarea,
+  .note-form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .note-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .note-form input,
+  .note-form textarea,
+  .note-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
